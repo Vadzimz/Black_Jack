@@ -1,6 +1,4 @@
 require_relative 'player'
-require_relative 'user'
-require_relative 'dealer'
 require_relative 'game'
 
 
@@ -78,6 +76,10 @@ class Game_interface
     raise 'Your input is out of variants to choose' if input.to_i.to_s != input || !(0..2).include?(input.to_i)
   end
 end
+
+g1 = Game_interface.new
+g1.join_the_game
+g1.start_the_game
   
     
 
