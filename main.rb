@@ -77,9 +77,9 @@ class Game_interface
   end
 end
 
-#g1 = Game_interface.new
-#g1.join_the_game
-#g1.start_the_game
+g1 = Game_interface.new
+g1.join_the_game
+g1.start_the_game
   
     
 
