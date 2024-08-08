@@ -43,8 +43,6 @@ class Game
   def finish
     puts "The game is over"
     puts "The results:"
-    players.each{ |p| p.show_results}
-
     if players.map(&:cards_amount).uniq.count == 1
       players.map{ |p| p.player_bank += 10}
       puts "The drawn game"
@@ -53,7 +51,7 @@ class Game
       winner.player_bank += game_bank
       puts "The winner #{winner.name}"
     end
-    
+    players.each{ |p| p.show_results}
     self.active = false
     players.map{ |p| p.cards = [] }
   end
