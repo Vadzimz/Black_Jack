@@ -42,7 +42,7 @@ class Player
         puts "#{name}: Cards: #{cards} Sum: #{cards_amount} Bank: #{player_bank}"
     else
       ["*"] * cards.count
-      puts "#{name}: Cards: #{["*"] * cards.count} Bank: #{player_bank}"
+      puts "#{name}: Cards: #{["*"] * cards.count} Sum: ** Bank: #{player_bank}"
     end
   end
 end
