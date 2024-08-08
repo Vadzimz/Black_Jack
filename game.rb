@@ -5,7 +5,7 @@ class Game
   def initialize
     @players = [Player.new("Dealer")]
     @cards = CARDS.dup
-    @game_bank = 0
+    @game_bank = 20
     @active = false
     @active_player = nil
   end
@@ -16,8 +16,6 @@ class Game
 
   def start
     starting_point
-    self.game_bank += players.length * 10
-    
     players.map do |p|
       p.game = self
       p.player_bank -= 10

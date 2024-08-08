@@ -35,7 +35,7 @@ class Game_interface
 
   def start_the_game
     my_game.start
-    loop do 
+    loop do
       me.show_results
       make_a_choice
       break if my_game.active == false
